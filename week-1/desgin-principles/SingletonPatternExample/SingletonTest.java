@@ -8,9 +8,9 @@ public class SingletonTest {
 
         // Check if both references point to the same instance
         if (logger1 == logger2) {
-            System.out.println("✅ Both logger instances are the same (Singleton works).");
+            System.out.println("Both logger instances are the same (Singleton works).");
         } else {
-            System.out.println("❌ Logger instances are different (Singleton failed).");
+            System.out.println("Logger instances are different (Singleton failed).");
         }
 
         // Use the logger

@@ -1,0 +1,93 @@
+Recursion?
+
+Recursion is when a function calls itself to solve smaller versions of a problem. It's useful for breaking complex problems into simpler steps.
+
+ Components of Recursion:
+
+1. Base Case** – Stops the recursion. Example: `factorial(0) = 1`.
+2. Recursive Case** – Function keeps calling itself with smaller input. Example: `factorial(n) = n * factorial(n-1)`.
+
+ Example:
+public class Factorial {
+    public static int factorial(int n) {
+        if (n == 0 || n == 1) return 1; // Base case
+        return n * factorial(n - 1);    // Recursive case
+    }
+
+    public static void main(String[] args) {
+        int number = 5;
+        System.out.println("Factorial of " + number + " is " + factorial(number));
+    }
+}
+
+
+Why Recursion?
+
+1. Divide and Conquer – Splits problems into smaller tasks.
+2. leaner Code– Simple and readable for problems like tree traversal, factorial, etc.
+3. Natural Fit– Ideal for problems like Fibonacci, Tower of Hanoi.
+4. Simplifies Complexity– Each call focuses on a smaller part of the problem.
+
+ Drawbacks
+
+Stack Overflow – Too many recursive calls can crash the program.
+Slower Performance – Can be inefficient without memoization.
+Harder Debugging– Mistakes in base or recursive case can be tricky.
+
+
+ Time Complexity of `calculateFutureValueMemoized`
+
+This method computes future value recursively and stores results to avoid repeating work.
+
+1. Time Complexity:
+
+* Base case takes O(1).
+* Recursive case is called once per year.
+* Memoization avoids recomputation.
+* **Total Time = O(n), where `n` = number of years.
+
+2. Space Complexity:**
+
+* Stack space for recursion = O(n)
+* Space for memo map = O(n)
+* **Total Space = O(n)
+
+---
+
+Better Optimization
+
+1. Use Iteration:
+
+
+public static double calculateFutureValueIterative(double principal, double rate, int years) {
+    for (int i = 0; i < years; i++) {
+        principal *= (1 + rate);
+    }
+    return principal;
+}
+
+
+* Time: O(n)
+* Space: O(1)
+
+ 2. Use Formula:
+
+
+public static double calculateFutureValueFormula(double principal, double rate, int years) {
+    return principal * Math.pow(1 + rate, years);
+}
+
+
+* Time: O(1)
+* Space: O(1)
+* Most efficient if precision is acceptable.
+
+---
+
+Summary Table
+
+| Method        | Time | Space | Notes                      |
+| ------------- | ---- | ----- | -------------------------- |
+| Recursion     | O(n) | O(n)  | Clear but uses more memory |
+| Iterative     | O(n) | O(1)  | Efficient and simple       |
+| Formula-based | O(1) | O(1)  | Fastest and most optimal   |

@@ -1,0 +1,53 @@
+
+Big O Notation (Simplified)
+
+Big O notation shows how the time or space used by an algorithm grows with input size. It helps compare algorithm efficiency.
+
+Common Big O Types:**
+
+O(1) – Constant time: Doesn’t change with input size.
+  *Example: Accessing an array element.
+
+O(log n) – Logarithmic time: Grows slowly as input increases.
+  *Example: Binary search.
+
+O(n) – Linear time: Grows directly with input size.
+  *Example: Linear search.
+
+O(n log n) – Grows faster than linear.
+  *Example: Merge sort, Heap sort.
+
+O(n²) – Quadratic time: Grows quickly.
+  *Example: Bubble sort, Insertion sort.
+
+O(2ⁿ)– Exponential time: Very slow for large inputs.
+  *Example: Brute force problems.
+
+O(n!)– Factorial time: Extremely slow.
+  *Example: Permutations in the traveling salesman problem.
+
+---
+
+Why It Matters**
+
+Big O helps us:
+
+* Compare algorithms.
+* Choose the most efficient one.
+
+
+
+Search Operation Examples
+
+1. Linear Search (Unsorted List)
+
+* Best: O(1) – Found at start
+* Average/Worst: O(n)
+
+2. Binary Search (Sorted List)
+
+* Best: O(1) – Found in middle
+* Average/Worst: O(log n)
+
+Use binary search when data is sorted
+
