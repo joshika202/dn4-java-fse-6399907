@@ -1,0 +1,43 @@
+/* src/BlogStyle.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+h2 {
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.post-container {
+  width: 80%;
+  margin: 10px auto;
+  padding: 15px;
+  background-color: #ffffff;
+  border-left: 5px solid #3498db;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.post-container h3 {
+  margin: 0 0 10px;
+  color: #2980b9;
+}
+
+.post-container p {
+  color: #2d3436;
+  line-height: 1.5;
+}
